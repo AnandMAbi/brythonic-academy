@@ -2,158 +2,253 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/css/main.css">
-    <link rel="icon" type="image/x-icon" href="./assests/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Brythonic Academy</title>
 </head>
 <body>
+
+    <!-- NAV -->
     <nav>
-        <a href="#"><object data="./assests/images/logo.svg" width="282px" height="50px"> </object></a>
-        <ul>
-            <li><a href="#about">About Us</a></li>
+        <a href="#" class="nav-logo">
+            <img src="assets/images/logo.svg" alt="Brythonic Academy">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#modes">Modes</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="contact-us-btn">Contact Us</a>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+        <button class="nav-mobile-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-section">
-            <div class="hero-text">
-                <h1>Brythonic Academy</h1>
-                <p>Aim high and let’s fulfill your dreams together</p>
+        <div class="hero-geo-rect"></div>
+        <div class="hero-left">
+            <div class="hero-number fade-in">01</div>
+            <p class="hero-tagline fade-in fade-in-delay-1">English Language Training</p>
+            <h1 class="fade-in fade-in-delay-2">
+                Brythonic<br><span class="light">Academy</span>
+            </h1>
+            <p class="hero-description fade-in fade-in-delay-3">
+                Aim high and let's fulfill your dreams together. We provide specialised training for IELTS, OET, and PTE — tailored to your personal journey abroad.
+            </p>
+            <a href="#courses" class="hero-cta fade-in fade-in-delay-4">
+                Explore Courses <span class="hero-cta-line"></span>
+            </a>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=1000&fit=crop&crop=faces" alt="Student learning">
+                <div class="hero-img-accent"></div>
+                <div class="hero-img-circle"></div>
             </div>
-            <div class="hero-img">
-                <img src="./assests/images/hero-img.png" alt="image of a student">
-            </div>
+            <span class="hero-vertical-text">Edappally · Kerala</span>
         </div>
     </section>
+
+    <!-- COURSES -->
     <section class="courses" id="courses">
-        <!-- anand -->
-        <h2>What We Offer</h2>
-        <div class="cards-container">
-            <div class="card">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <div>
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Our Courses</h2>
+            </div>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-card-accent"></div>
+                <div class="course-card-num">01</div>
                 <h3>IELTS</h3>
                 <h4>International English Language Testing System</h4>
-                <p>We provide finest IELTS training by expert trainers keeping up with the changes in the industry. Trainers at Brythonic Academy follow a pattern based speaking and writing modules made easy to follow for even non english medium background candidates. Weekly mock exams provide the students and the trainer with the step by step improvement graph. Online and classroom teaching is provided for candidates according to convenience.</p>
+                <p>We provide the finest IELTS training by expert trainers keeping up with the changes in the industry. Pattern-based speaking and writing modules make it easy to follow for even non-English medium background candidates. Weekly mock exams provide step-by-step improvement tracking.</p>
             </div>
-            <div class="card">
+            <div class="course-card">
+                <div class="course-card-accent"></div>
+                <div class="course-card-num">02</div>
                 <h3>OET</h3>
-                <h4>Occupational English Test</h4><br>
-                <p>OET training is provided by experienced faculties who have nursing and medical background to allow our students with the best learning experience.</p>
+                <h4>Occupational English Test</h4>
+                <p>OET training is provided by experienced faculties who have nursing and medical background, allowing our students the best learning experience. Our specialised approach ensures healthcare professionals achieve their language proficiency goals with confidence.</p>
             </div>
-            <div class="card">
+            <div class="course-card">
+                <div class="course-card-accent"></div>
+                <div class="course-card-num">03</div>
                 <h3>PTE</h3>
-                <h4>Pearson Test of English</h4><br>
-                <p>Pearson Test of English is accepted at universities, colleges and governments worldwide. It is a compter-based english language test trusted by several international universities. We provide personalised computer training with frequentmock exams to analyse improvement of students. When meeting your dreams to study or work abroad choosing PTE is the wisest move.</p>
+                <h4>Pearson Test of English</h4>
+                <p>Pearson Test of English is accepted at universities, colleges and governments worldwide. It is a computer-based English language test trusted by several international universities. We provide personalised computer training with frequent mock exams to analyse improvement.</p>
             </div>
         </div>
     </section>
-    <section class="about" id="about">
-        <div class="abt-img">
-            <img src="./assests/images/abtus-img.svg" alt="abtus" />
-        </div>
-        <!-- <object data="./assests/images/abtus-img.svg" type="" width="482px" height="373px"></object> -->
-        <div class="abt-text">
-            <h2>About Us</h2>
-            <p>Brythonic Academy will help aspirers pave their way to their dreams of moving abroad.
-            <br><br>
-            We provide specialised training to candidates to fit their personal requirements of learning. Our IELTS, OET and PTE training is trimmed to meet individual 
-            needs by trainers analysing the candidates and their activity.
-            <br> <br>
-            Providing frequent mock exams analyses the students improvement in each module to give personal feedbacks and proper tracking of the training. 
-            <br>
-            Candidates are taught at their covenience to make learning a happy experience.</p>
-        </div>
-    </section>
-    <section class="modes" id="modes">
-        <h2>Modes of Classes</h2>
-        <div class="modes-div">
-            <div class="card">
-                <h3>Offline</h3>
-                <div class="card-small">
-                    <p>Regular Batches</p>
-                </div>
-                <div class="card-small">
-                    <p>Special Batches</p>
-                </div>
-                <div class="card-small">
-                    <p>Weekend Batches</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Online</h3>
-                <div class="card-small">
-                    <p>Group Sessions</p>
-                </div>
-                <div class="card-small">
-                    <p>One-to-One</p>
-                </div>
-                <div class="card-small">
-                    <p>Special writing and speaking classes</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <!-- nandu -->
-        <div class="contact-text">
-            <h2>Contact Us</h2>
-            <div class="phone">
-                <div class="contact-field"><img class="phone-svg" src="assests\images\phone.svg" alt=""> 
-                    <p> 
-                        <a href="tel:+919995906601" class="phno">+91 9995906601</a>
-                        <br/>
-                        <a href="tel:+917356900610" class="phno">+91 7356900610</a>
-                    </p>
-                </div>
-                <br>  
-                <br>  
-                <div class="contact-field"><img class="mail-svg" src="assests\images\mail.svg" alt="">
-                    <a href = "mailto: brythonic.academy@gmail.com">brythonic.academy@gmail.com</a>
-                </div>
-                <br>
-                <br>
-                <div class="contact-field"><img class="loc-svg" src="assests\images\loc.svg" alt="">
-                    <p>
-                        <a href="https://goo.gl/maps/eKW3EM5gpepjqb2K8" class="phno">Ponevazhi Road, Ponekkara <br> Edappally, Ernakulam <br> Kerala-682 041 </a>
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <div class="contact-loc">
-            <iframe src="https://maps.google.com/maps?q=10%C2%B001'51.8%22N%2076%C2%B017'58.7%22E&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 470px; height: 510px;"></iframe>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-visual">
+            <div class="about-geo-1"></div>
+            <div class="about-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=500&fit=crop" alt="Classroom training at Brythonic Academy">
+            </div>
+            <div class="about-geo-2"></div>
         </div>
-        
+        <div class="about-content">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <div>
+                    <span class="section-label">Who We Are</span>
+                    <h2 class="section-title">About Us</h2>
+                </div>
+            </div>
+            <div class="about-text">
+                <p>Brythonic Academy will help aspirers pave their way to their dreams of moving abroad. We provide specialised training to candidates to fit their personal requirements of learning.</p>
+                <p>Our IELTS, OET and PTE training is trimmed to meet individual needs by trainers analysing the candidates and their activity. Providing frequent mock exams analyses the student's improvement in each module to give personal feedbacks and proper tracking.</p>
+                <p>Candidates are taught at their convenience to make learning a happy experience.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Students Trained</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Course Programs</div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- MODES -->
+    <section class="modes" id="modes">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <div>
+                <span class="section-label">Flexible Learning</span>
+                <h2 class="section-title">Modes of Classes</h2>
+            </div>
+        </div>
+        <div class="modes-grid">
+            <div class="mode-card">
+                <div class="mode-card-accent"></div>
+                <h3>Offline</h3>
+                <div class="mode-item"><div class="mode-dot"></div><p>Regular Batches</p></div>
+                <div class="mode-item"><div class="mode-dot"></div><p>Special Batches</p></div>
+                <div class="mode-item"><div class="mode-dot"></div><p>Weekend Batches</p></div>
+            </div>
+            <div class="mode-card">
+                <div class="mode-card-accent"></div>
+                <h3>Online</h3>
+                <div class="mode-item"><div class="mode-dot"></div><p>Group Sessions</p></div>
+                <div class="mode-item"><div class="mode-dot"></div><p>One-to-One Sessions</p></div>
+                <div class="mode-item"><div class="mode-dot"></div><p>Special Writing & Speaking Classes</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <div>
+                    <span class="section-label">Reach Out</span>
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="assets/images/phone.svg" alt="Phone">
+                </div>
+                <div class="contact-detail">
+                    <h4>Phone</h4>
+                    <a href="tel:+919995906601">+91 99959 06601</a><br>
+                    <a href="tel:+917356900610">+91 73569 00610</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="assets/images/mail.svg" alt="Email">
+                </div>
+                <div class="contact-detail">
+                    <h4>Email</h4>
+                    <a href="mailto:brythonic.academy@gmail.com">brythonic.academy@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="assets/images/location.svg" alt="Location">
+                </div>
+                <div class="contact-detail">
+                    <h4>Address</h4>
+                    <a href="https://goo.gl/maps/eKW3EM5gpepjqb2K8" target="_blank">Ponevazhi Road, Ponekkara<br>Edappally, Ernakulam<br>Kerala — 682 041</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-map">
+            <iframe src="https://maps.google.com/maps?q=10%C2%B001'51.8%22N%2076%C2%B017'58.7%22E&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-map-overlay"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-main">
-            <img class="logo-contact" src="assests/images/logo-footer.svg">
-            <div class="social-media">  
-                <div class="social">
-                    <img src="assests\images\insta.svg" alt="">
-                    <p class="socials">
-                    <a href="http://instagram.com/brythonicacademy">@brythonicacademy</a>
-                </p>
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.svg" alt="Brythonic Academy">
                 </div>
-                <div class="social">
-                    <img src="assests\images\fb.svg" alt="">
-                    <p class="socials">
-                        <a href="http://facebook.com/britisheracademy">@brythonicacademy</a>
-                    </p>
-                </div>
-                <!-- <div class="social">
-                    <img src="assests\images\twitter.svg" alt="">
-                    <p class="socials">
-                        <a href="http://twitter.com/brythonicacademy">@brythonicacademy</a>
-                    </p>
-                </div> -->
+                <p>English Language Training · Kerala</p>
+            </div>
+            <div class="footer-social">
+                <a href="http://instagram.com/brythonicacademy" target="_blank">Instagram</a>
+                <a href="http://facebook.com/britisheracademy" target="_blank">Facebook</a>
             </div>
         </div>
-        <p class="copyright-footer">©Copyright 2022 | Brythonic Academy</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Brythonic Academy. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.course-card, .mode-card, .contact-item, .stat-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('.courses-grid .course-card').forEach((el, i) => el.style.transitionDelay = `${i * 0.15}s`);
+        document.querySelectorAll('.modes-grid .mode-card').forEach((el, i) => el.style.transitionDelay = `${i * 0.15}s`);
+        document.querySelectorAll('.contact-info .contact-item').forEach((el, i) => el.style.transitionDelay = `${i * 0.1}s`);
+        document.querySelectorAll('.about-stats .stat-item').forEach((el, i) => el.style.transitionDelay = `${i * 0.1}s`);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
 </body>
 </html>
